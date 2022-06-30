@@ -1,0 +1,100 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(255 90 95 / 20%);
+  background-image: url('../src/images/airbnb-logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-attachment: fixed;
+}
+@media(min-width:575px){
+  #root{
+    max-width: 75%;
+    margin: 40px auto;
+    border-radius: 10px;
+
+  }
+}
+#root{
+  background: #fff;
+}
+nav{
+  box-shadow: 0 4px 2px -2px rgb(214, 210, 210);
+}
+.nav--logo{
+  max-width: 180px;
+  height: auto;
+}
+.hero--img{
+  width: 100%;
+  height: auto;
+}
+@media(min-width:992){
+  .card{
+    width: 300px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+.card{
+  margin: 10px;
+  padding: 10px;
+}
+.card--img {
+  position: relative;
+}
+.card--img img{
+  width: 100%;
+    height: 261px;
+  min-height: 200px;
+}
+.card--badge{
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  text-transform: capitalize;
+  background-color: #fff;
+  border-radius: 2px;
+  padding: 2px;
+  font-weight: 600;
+}
+.dot{
+  display: inline-block;
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: gray;
+}
+.card--stats{
+  display: flex;
+  align-items: center;
+}
+.card--stats img{
+  width: 13px;
+  height: auto;
+}
+.card--badge{
+  font-size: 14px;
+}
+.cards{
+  padding: 10px;
+  display: flex;
+}
+.card:hover{
+  transform: scale(1.01);
+  transition: all 0.3s;
+}
+@media (max-width: 991.98px){
+  .cards{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
